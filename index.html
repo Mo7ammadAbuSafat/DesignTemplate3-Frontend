@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templete</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://kit.fontawesome.com/13fa478d2f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!--Start Header-->
+        <div class="header">
+            <img src="images/logo-bookmark.svg" alt="">
+            <ul class="menu">
+                <li><a href="#features">features</a></li>
+                <li><a href="">pricing</a></li>
+                <li><a href="">contact</a></li>
+                <li id="loginButton"><a href="">login</a></li>
+            </ul>
+        </div>
+        <!--End Header-->
+        <!--Start leadPart-->
+        <div class="leadPart">
+            <div class="text">
+                <h2>A Simple Bookmark <br> Manager</h2>
+                <p>A clean and simple interface to organize your favorite website. Open
+                    a new browser tab and see your sites load instantly. Try it for free.
+                </p>
+                <div class="buttonsContainer">
+                    <button>Get it on Chrome</button>
+                    <button>Get it on Firefox</button>
+                </div>
+            </div>
+            <div class="photo">
+                <img src="images/illustration-hero.svg" alt="">
+                <div class="blue"></div>
+            </div>
+
+
+        </div>
+        <!--End leadPart-->
+        <!--Start Features-->
+        <div class="features" id="features">
+            <div class="sectionHeader">
+                <h2>Features</h2>
+                <p>Our aim is to make it quick and easy
+                    for you to access your favorite websites.
+                    Your bookmarks sync between your devices
+                    so you can access them on the go.</p>
+            </div>
+            <div class="featuresMenu">
+                <ul>
+                    <li id="Simple"><button onclick="set('simple','speedy','easy','Simple','Speedy','Easy');">Simple
+                            Bookmarking</button></li>
+                    <li id="Speedy"><button onclick="set('speedy','simple','easy','Speedy','Simple','Easy');">Speady
+                            Searching</button></li>
+                    <li id="Easy"><button onclick="set('easy','speedy','simple','Easy','Speedy','Simple');">Easy
+                            Sharing</button></li>
+                </ul>
+            </div>
+            <div class="featureContent">
+                <div id="simple" class="card">
+                    <div class="photo">
+                        <img src="images/illustration-features-tab-1.svg" alt="">
+                        <div class="blue"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Bookmark in one click</h2>
+                        <p>Organize your bookmarks however you like. Our simple drag-and-drop interface
+                            gives you complete control over how you manage your favorite sites.
+                        </p>
+                        <div class="buttonContainer">
+                            <button>More info</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="speedy" class="card">
+                    <div class="photo">
+                        <img src="images/illustration-features-tab-2.svg" alt="">
+                        <div class="blue"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Intelligent search</h2>
+                        <p>Our powerful search feature will help you find saved sites in no time
+                            at all. No need to trawl through all of your bookmarks.
+                        </p>
+                        <div class="buttonContainer">
+                            <button>More info</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="easy" class="card">
+                    <div class="photo">
+                        <img src="images/illustration-features-tab-3.svg" alt="">
+                        <div class="blue"></div>
+                    </div>
+                    <div class="text">
+                        <h2>Share your bookmarks</h2>
+                        <p>Easily share your bookmarks and collections with others. Create
+                            a shareable link that you can send at the click of a button.
+                        </p>
+                        <div class="buttonContainer">
+                            <button>More info</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End  Features-->
+        <!--Start  Extension-->
+        <div class="Extension">
+            <div class="sectionHeader">
+                <h2>Download the extension</h2>
+                <p>We've got more browsers in the pipeline.
+                    Please do let us know if you've got a
+                    favorite you'd like us to prioritize.</p>
+            </div>
+            <div class="types">
+                <div class="card cTop">
+                    <div class="imgDiv">
+                        <img class="browserImg" src="images/logo-chrome.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Add to Chrome</h2>
+                        <p>Minimum version 62</p>
+                        <img class="dot" src="images/bg-dots.svg" alt="">
+                    </div>
+                    <button>Add and install Extension</button>
+                </div>
+                <div class="card">
+                    <div class="imgDiv">
+                        <img class="browserImg" src="images/logo-firefox.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Add to Firefox</h2>
+                        <p>Minimum version 55</p>
+                        <img class="dot" src="images/bg-dots.svg" alt="">
+                    </div>
+                    <button>Add and install Extension</button>
+                </div>
+                <div class="card cBottom">
+                    <div class="imgDiv">
+                        <img class="browserImg" src="images/logo-opera.svg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Add to Opera</h2>
+                        <p>Minimum version 46</p>
+                        <img class="dot" src="images/bg-dots.svg" alt="">
+                    </div>
+                    <button>Add and install Extension</button>
+                </div>
+            </div>
+        </div>
+        <!--End Extension-->
+
+        <!--start Questions-->
+        <div class="questionsPart">
+            <div class="sectionHeader">
+                <h2>Frequently Asked Questions</h2>
+                <p>Here are some of our FAQs.
+                    If you have any other questions
+                    you'd like answered please feel
+                    free to email us.</p>
+            </div>
+            <div class="listOfQuestion">
+                <div class="question">
+                    <div onclick="showHide()" class="text">
+                        <h3>What is Bookmark?</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                            convallis ultricies. Mauris augue nassa, ultricies non ligula:
+                            Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div onclick="showHide()" class="text">
+                        <h3>How can i request a new browser?</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                            convallis ultricies. Mauris augue nassa, ultricies non ligula:
+                            Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div onclick="showHide()" class="text">
+                        <h3>Is there a mobile app?</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                            convallis ultricies. Mauris augue nassa, ultricies non ligula:
+                            Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+                <div class="question">
+                    <div onclick="showHide()" class="text">
+                        <h3>What about other chromium browsers?</h3>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="answer hidden">
+                        <p>Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                            ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+                            convallis ultricies. Mauris augue nassa, ultricies non ligula:
+                            Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies.
+                            Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</p>
+                    </div>
+                </div>
+            </div>
+            <button>More info</button>
+        </div>
+
+
+        <!--End Questions-->
+    </div>
+    <!--start Contact-->
+
+    <div class="contact">
+        <p>35.000+ ALREADY JOINED</p>
+        <p>Stay up-to-date with what we're doing</p>
+        <div class="form">
+            <input type="email" placeholder="example@gmail.com">
+            <button>Contact Us</button>
+        </div>
+    </div>
+
+    <!--End Contact-->
+    <!--start Footer-->
+
+    <div class="Footer">
+        <div class="leftF">
+            <ul class="menu">
+                <li><img src="images/logo-bookmark.svg" alt=""></li>
+                <li>features</li>
+                <li>pricing</li>
+                <li>contact</li>
+            </ul>
+        </div>
+        <div class="rightF">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+        </div>
+
+    </div>
+
+    <!--End Footer-->
+
+    <script src="main.js"></script>
+</body>
+
+</html>
